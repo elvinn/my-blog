@@ -8,10 +8,27 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "dist",
+    "removeComments": true,
     "baseUrl": ".",
     "paths": {
-      "*": ["node_modules/*", "src/types/*"]
+      "@consts/*": [
+        "src/consts/*"
+      ],
+      "@controllers/*": [
+        "src/controllers/*"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "*": [
+        "node_modules/*"
+      ],
     }
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*"
+  ]
 }
